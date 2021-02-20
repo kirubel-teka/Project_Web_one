@@ -1,0 +1,139 @@
+.product-main-wrapper {
+  width: 1150px;
+  height: 30px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.pmw-left,
+.pmw-right {
+  float: left;
+}
+
+.pmw-right {
+  width: 350px;
+}
+
+.pmw-left {
+  width: calc(100% - 350px);
+}
+
+.pmw-left-wrapper {
+  margin-right: 70px;
+}
+
+.pmw-left-wrapper > h4 {
+  display: inline-block;
+}
+
+.pmw-left-wrapper > span {
+  float: right;
+  padding: 1px 12px;
+  border: 1px solid #ddd;
+  background: -webkit-linear-gradient(#f1f1f1, #ddd);
+  cursor: pointer;
+}
+
+.pmw-left-wrapper > span:hover {
+  background: -webkit-linear-gradient(#ddd, #f1f1f1);
+}
+
+.pmw-right-wrapper {
+  margin-top: 38px;
+}
+
+.sample-product {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.sample-product img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.sample-product-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 580px;
+  position: static;
+}
+
+.edit-products {
+  right: 95px;
+  width: 60px;
+  background: #033566;
+}
+
+.edit-products,
+.delete-products {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 10px;
+  z-index: 99;
+}
+
+.delete-products {
+  width: 80px;
+  right: 10px;
+  background: rgb(245, 59, 59);
+}
+
+.edit-products:hover {
+  background: #0653a0;
+}
+
+.pmw-right-wrapper h4 {
+  padding: 13px 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.right-wrapper {
+  border: 1px solid #ddd;
+}
+
+.pmw-right-wrapper h4 .fa-plus-circle {
+  margin-right: 5px;
+}
+
+.pmw-right-wrapper h4 .fa-angle-down {
+  float: right;
+}
+
+.right-wrapper form {
+  padding: 15px;
+}
+
+.right-wrapper form input,
+.right-wrapper form textarea,
+.right-wrapper form button {
+  width: 100%;
+}
+
+.right-wrapper form input,
+.right-wrapper form textarea {
+  margin-bottom: 10px;
+}
+
+.right-wrapper form textarea {
+  height: 100px;
+}
+
+.right-wrapper form button {
+  border: 1px solid #aaa;
+  background: #eee;
+  cursor: pointer;
+  padding: 3px 0;
+}
+
+.right-edit-item {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
