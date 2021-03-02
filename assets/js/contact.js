@@ -1,5 +1,5 @@
-var test = document.getElementById("test").innerHTML ="YES I AM A TEST"
 var submitContact = document.getElementById("submit_contact").addEventListener("click",submit)
+var body =  document.getElementsByTagName("body");
 // data of the user
 
  function submit(ev) {
@@ -20,7 +20,7 @@ var submitContact = document.getElementById("submit_contact").addEventListener("
         let transaction = openRequestdb.transaction("contacts","readwrite");
 
         let newContact  = transaction.objectStore("contacts");
-        // var a = JSON.parse(nameOfUser);
+
 
         var mycontact =  {
             name:document.getElementById("user_name").value,
@@ -30,10 +30,12 @@ var submitContact = document.getElementById("submit_contact").addEventListener("
 
 
         }
-        console.log("the user");
       
-        newContact.put(mycontact)
-
-       
+        newContact.put(mycontact);
+        alert("We Have Your Response Thanks for your suggestion")
+        location.reload();
+        return false;
     }
  }
+
+ 
